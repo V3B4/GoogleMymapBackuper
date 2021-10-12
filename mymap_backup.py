@@ -5,7 +5,6 @@ import cv2
 
 # 設定
 kml_path = 'mymap.kml'
-out_path = 'downloads' # 出力先のフォルダ名
 image_size = 2048       # 画像の横幅
 jpeg_quality = 90      # JPEGの品質
 file_extension = 'jpg' # 拡張子(jpg or png)
@@ -15,6 +14,9 @@ root = ET.parse(kml_path).getroot()
 
 # 名前区間({http://www.opengis.net/kml/2.2})を抽出
 xmlns = root.tag[:-3]
+
+# マップ名を取得し、出力先のフォルダ名として利用
+out_path = root[0].find(xmlns + 'name').text
 
 # Documentの子要素であるFolderを抽出
 for folder in root[0].findall(xmlns + 'Folder'):
