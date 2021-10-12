@@ -13,6 +13,7 @@ Googleマイマップにアップロードした画像をダウンロードす�
 
 ## Usage
 1. KMLファイルをダウンロード
+1. KMLファイルを指定のフォルダに格納
 1. 必要に応じてmymap_backup.py内の設定を変更
 1. `pip3 install lxml opencv-python`
 1. `python3 mymap_backup.py`
