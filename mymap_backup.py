@@ -39,7 +39,7 @@ for folder in root[0].findall(xmlns + 'Folder'):
         images = cdata.text.split(' ')
 
         # 画像を保存
-        for n, url in enumerate(images):
+        for n, url in enumerate(images, 1):
             filename = out_path + '/' + folder_name + '/' + place_name + '/' + str(n) + '.png'
             url = url + '=s' + str(image_size)
             with open(filename ,mode='wb') as f:
