@@ -1,1 +1,3 @@
 # GooeleMymapBackuper
+
+googleマイマップにアップロードした画像をダウンロードするツール
