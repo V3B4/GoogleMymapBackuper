@@ -1,4 +1,4 @@
-# GooeleMymapBackuper
+# GoogleMymapBackuper
 
 Googleマイマップにアップロードした画像をダウンロードするツール
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/V/V3B4/20211012/20211012171135.png)
